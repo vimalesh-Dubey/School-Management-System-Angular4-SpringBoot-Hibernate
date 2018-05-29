@@ -1,0 +1,63 @@
+      
+      <div >
+      <app-home></app-home>
+      <div *ngIf="showview"style="text-align: center">
+              <input class="searchBox" type="text"  name="searchBox" placeholder="search"  >
+              <a href="#"><img  width="100px" hight=50px style="padding-top: 10px" src="../assets/images/search.jpeg"></a>
+      </div>
+
+<div  *ngIf="showview" class="container">
+        <h2>Students</h2>          
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor= "let student of studentList">
+              <td>{{student.fname}}</td>
+              <td>{{student.lname}}</td>
+              <td>{{student.email}}</td>
+              <td><input type="submit" value="Get Details" (click)="getstudentDetail(student)"></td>
+              <td><input type="submit" value="Send Invite"></td>
+            </tr>
+            <!-- <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td><input type="submit" value="Get Details"></td>
+              <td><input type="submit" value="Send Invite"></td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+              <td><input type="submit" value="Get Details"></td>
+              <td><input type="submit" value="Send Invite"></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+      <app-studentdetail  *ngIf="!showview" [student] = "student">
+             
+      </app-studentdetail>
+    
+
+      
+      
+      <!-- <div class="container" style="text-align: center">
+                <!-- <form  name="loginform" onsubmit="processLogin()"> -->
+                                <!-- <label for="email">Email address:</label>
+                                <input type="text" class="form-control" name="username"><br/>
+                        password:<input type="password" class="form-control"  name="password"><br/>
+                        <input type="submit" name="login"> 
+                 </form>  -->
+        <!-- </div>   --> 
+
+        
+    
+

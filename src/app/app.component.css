@@ -1,0 +1,9 @@
+/* :host {
+    display: block;
+    border: 1px solid black;
+    background-color: floralwhite;
+  } */
+
+  .appheader{
+      background-color: grey;
+  }
