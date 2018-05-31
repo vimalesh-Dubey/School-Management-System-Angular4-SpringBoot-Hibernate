@@ -15,11 +15,11 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
 
     this.formData = new FormGroup({
-         emailId:new FormControl("emailId",Validators.compose([
+         emailId:new FormControl("",Validators.compose([
           Validators.required,
           Validators.pattern("[^ @]*@[^ @]*")
           ])),
-          passwd: new FormControl("passwd")
+          passwd: new FormControl("")
     
     });
   }

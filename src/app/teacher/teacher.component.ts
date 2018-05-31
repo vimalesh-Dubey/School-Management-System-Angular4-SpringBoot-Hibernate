@@ -7,7 +7,7 @@ import {DynamicCompRendererDirective} from '../directives/dynamic-comp-renderer.
   styleUrls: ['./teacher.component.css']
 })
 export class TeacherComponent implements OnInit {
-    comp:Type<any> = app-student;
+   // comp:Type<any> = app-student;
   counter=0;
   constructor(private compresolver:ComponentFactoryResolver,
               public DynamicCompRenderer  :DynamicCompRendererDirective) {
@@ -15,7 +15,7 @@ export class TeacherComponent implements OnInit {
                }
 
   ngOnInit() {
-         this.compresolver.resolveComponentFactory(Type<any);
+        // this.compresolver.resolveComponentFactory(Type<any);
   }
 
   teacherlistenchild(){
