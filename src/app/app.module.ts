@@ -17,6 +17,7 @@ import { Http, HttpModule } from '@angular/http';
 import { TeacherComponent } from './teacher/teacher.component';
 import { TeacherDetailComponent } from './teacher-detail/teacher-detail.component';
 import { DynamicCompRendererDirective } from './directives/dynamic-comp-renderer.directive';
+import { StudentEnrollComponent } from './student/student-enroll/student-enroll.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { DynamicCompRendererDirective } from './directives/dynamic-comp-renderer
     StudentdetailComponent,
     TeacherComponent,
     TeacherDetailComponent,
-    DynamicCompRendererDirective
+    DynamicCompRendererDirective,
+    StudentEnrollComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,10 @@ import { DynamicCompRendererDirective } from './directives/dynamic-comp-renderer
         {
           path:'teacher',
           component:TeacherComponent
+        },
+        {
+          path:'student/enroll',
+          component:StudentEnrollComponent
         }
       ]
     )

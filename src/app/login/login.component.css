@@ -5,23 +5,27 @@ height:30vh;
 margin-top:35vh;
 margin-bottom: 35vh;
 border: 1px solid black;
-background: rgb(255, 233, 30);
+background-color:hsla(120,100%,50%,0.3);
 text-align: center;
 padding: 5%;
 border-radius: 10px 10px;
 }
 
 input{
-    border-radius: 10px 10px;
+    border-radius: 10px 10px ;
     margin-bottom: 10px;
     box-shadow: 5px 5px #888888;
+    width:10vw;
 
     
 }
 button{
     border-radius: 10px;
     color: Green;
-    background: chartreuse
+    background: chartreuse;
+    cursor: pointer;
 }
-
+*:focus {
+    outline: none;
+}
 

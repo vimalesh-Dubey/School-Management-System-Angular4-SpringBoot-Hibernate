@@ -1,4 +1,33 @@
-      
+<div class="container">
+  <ul>
+    <li><a routerLink="Subject">Subject</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</div>
+
+<div class="container " *ngIf="!showEnrollForm">
+  <h5 class="sub-det">You are Enrolled to following subjects:</h5>
+ <p *ngIf="!showview" >
+   currently you are not enrolled to any subject
+  </p>
+</div> 
+
+<div class="container">
+    <h6 *ngIf="!showEnrollForm" (click)="triggerEnroll()">Enroll For a Subject</h6>
+</div>
+
+<app-student-enroll *ngIf="showEnrollForm"></app-student-enroll>
+
+
+
+
+
+
+
+
+<!--       
       <div >
       <app-home></app-home>
       <div *ngIf="showview"style="text-align: center">
@@ -38,25 +67,13 @@
               <td><input type="submit" value="Get Details"></td>
               <td><input type="submit" value="Send Invite"></td>
             </tr> -->
-          </tbody>
+          <!-- </tbody>
         </table>
       </div>
     </div>
       <app-studentdetail  *ngIf="!showview" [student] = "student">
              
-      </app-studentdetail>
-    
-
-      
-      
-      <!-- <div class="container" style="text-align: center">
-                <!-- <form  name="loginform" onsubmit="processLogin()"> -->
-                                <!-- <label for="email">Email address:</label>
-                                <input type="text" class="form-control" name="username"><br/>
-                        password:<input type="password" class="form-control"  name="password"><br/>
-                        <input type="submit" name="login"> 
-                 </form>  -->
-        <!-- </div>   --> 
+      </app-studentdetail> --> 
 
         
     

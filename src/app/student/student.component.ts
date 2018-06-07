@@ -10,7 +10,8 @@ import {Student} from '../model/student';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  showview:boolean=true;
+  showview:boolean=false;
+  showEnrollForm:boolean=false;
   student: Student = {
     fname: 'vimal',
    lname: 'Windstorm',
@@ -48,6 +49,10 @@ export class StudentComponent implements OnInit {
     this.showview=false;
     this.router.navigate(["studentdetail"]);
     
+  }
+
+  triggerEnroll = () =>{
+    this.showEnrollForm=true;
   }
 
 }
