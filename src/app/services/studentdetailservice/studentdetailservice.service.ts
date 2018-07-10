@@ -4,11 +4,11 @@ import { CallRestApiService } from '../call-rest-api.service';
 @Injectable()
 export class StudentdetailserviceService {
 
-  constructor(private restService:CallRestApiService) {
+  constructor(private restService: CallRestApiService) {
 
    }
 
-   getstudentDatafromFakeJson(){
+   getstudentDatafromFakeJson() {
      console.log('calling studentDetail service');
      return this.restService.callTestApi();
    }

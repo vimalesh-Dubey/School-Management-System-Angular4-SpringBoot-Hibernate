@@ -1,5 +1,6 @@
-import { Component, OnInit, ComponentFactoryResolver,Type } from '@angular/core';
+import { Component, OnInit, ComponentFactoryResolver, Type } from '@angular/core';
 import {DynamicCompRendererDirective} from '../directives/dynamic-comp-renderer.directive';
+import {tableDragger} from 'table-dragger';
 
 @Component({
   selector: 'app-teacher',
@@ -8,18 +9,23 @@ import {DynamicCompRendererDirective} from '../directives/dynamic-comp-renderer.
 })
 export class TeacherComponent implements OnInit {
    // comp:Type<any> = app-student;
-  counter=0;
-  constructor(private compresolver:ComponentFactoryResolver,
-              public DynamicCompRenderer  :DynamicCompRendererDirective) {
+  counter = 0;
+  constructor(private compresolver: ComponentFactoryResolver,
+ ) {
 
                }
 
   ngOnInit() {
         // this.compresolver.resolveComponentFactory(Type<any);
+       // new tableDragger(document.querySelector('#default-table'), { mode: 'row' });
   }
 
-  teacherlistenchild(){
+  teacherlistenchild() {
     this.counter++;
   }
+
+  // tableDragger(this.document.querySelector('#default-table'));
+ // tableDragger(document.querySelector("#row-table"), { mode: "row" });
+
 
 }

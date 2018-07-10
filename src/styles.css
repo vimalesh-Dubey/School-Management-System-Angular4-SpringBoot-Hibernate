@@ -1,7 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+
 body{
     background-image: url('./assets/images/back.jpg');
     background-position: center;
     background-attachment: fixed ;
+    font-family: sans-serif,serif,'Times New Roman', Times, serif
     
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+input{
+    width: 10%;
 }

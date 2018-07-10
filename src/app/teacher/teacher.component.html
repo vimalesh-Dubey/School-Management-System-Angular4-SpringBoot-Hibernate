@@ -1,7 +1,57 @@
-<p>
-  teacher works!
-  {{counter}}
-</p>
+<div clas="col-sm-12">
+       <div class="col-sm-4 offset-sm-4">
+           <h2>Know your Teachers</h2>
+       </div>
 
-<app-teacher-detail (clickevent) = "teacherlistenchild()" [childCounter]="counter"> </app-teacher-detail>
-<ng-template appDynamicCompRenderer></ng-template>
+      <div class="col-sm-8 offset-sm-4 ">
+          <div class="form-group search-form">
+            <label for="dept">Department</label>
+            <input type="email" class="form-control col-sm-3" id="dept" aria-describedby="emailHelp" placeholder="Enter department">
+        
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Subject</label>
+            <input type="password" class="form-control col-sm-3" id="exampleInputPassword1" placeholder="Subject">
+          </div>
+          <button type="submit" class="btn btn-primary offset-sm-1">Search</button>
+        </div>
+      
+
+       <div class="col-sm-8 offset-sm-2">
+          <table id="default-table" class="table">
+              <thead>
+                <tr class="bg-info">
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-info">
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr class="bg-info">
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr class="bg-info">
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+       </div>
+</div>
+
+
+
+<!-- <app-teacher-detail (clickevent) = "teacherlistenchild()" [childCounter]="counter"> </app-teacher-detail>
+<ng-template appDynamicCompRenderer></ng-template> -->

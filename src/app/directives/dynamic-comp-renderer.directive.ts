@@ -5,8 +5,7 @@ import { Directive, ViewContainerRef } from '@angular/core';
 })
 export class DynamicCompRendererDirective {
 
-  constructor(private viewContainerRef:ViewContainerRef ) {
-    
+  constructor(private viewContainerRef: ViewContainerRef ) {
   }
 
 }

@@ -10,15 +10,14 @@ import {Student} from '../model/student';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  showview:boolean=false;
-  showEnrollForm:boolean=false;
+  showview = false;
+  showEnrollForm = false;
   student: Student = {
     fname: 'vimal',
    lname: 'Windstorm',
-   email:'vimal@gmail.com'
+   email: 'vimal@gmail.com'
   };
-  
-    name = "vimalesh";
+    name = 'vimalesh';
     todaydate;
     studentList = [{fname:'vimal',lname:'dubey',email:'vimaleshd5@gmail.com'},
                    {fname:'ajay',lname:'sharma',email:'ahay123@gmail.com'},
